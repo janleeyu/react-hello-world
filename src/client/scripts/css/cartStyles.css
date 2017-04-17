@@ -1,0 +1,268 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.header-container h2 {
+	float: left;
+	color: white;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.header-container {
+	/*border: solid black 1px;*/
+	width: 100%;
+	height: auto;
+	background-color: #2c3e50;
+	/*position: fixed;*/
+	padding: 0;
+	top: 0;
+	left: 0;
+	margin: 0 auto 0 auto;
+	position: relative; 
+	overflow: auto;
+	display: table;
+}
+
+/*header nav*/
+.header-nav-container {
+	height: 100%;
+	width: 229.5px;
+	float: right;
+	/*border: solid black 1px;
+	/*display: table-row;*/
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2c3e50;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Helvetica;
+}
+
+li a:hover {
+	cursor: pointer;
+	background-color: #34495e;
+	color: white;
+}
+
+.active-nav{
+	border-bottom: 3px solid #95a5a6;
+}
+
+
+/*cart menu*/
+.cart-menu-container {
+	border-bottom: solid #95a5a6 2px;
+	border-bottom-left-radius: 100%;
+	background-color: #f39c12;
+	height: 40px;
+	width: 100px;
+	/*min-width: 200px;*/
+	padding: 1px;
+	float: right;
+	transition: all .3s ease;
+	float: right;
+}
+
+.cart-menu-content-container {
+	/*border: solid #95a5a6 1px;*/
+	height: 90%;
+	width: 75%;
+	float: right;
+	padding: 1px;
+}
+
+.cart-item-quantity span {
+	font-weight: bold;
+	font-size: small;
+}
+
+.cart-menu-container:hover {
+	height: 43px;
+	width: 110px;
+}
+
+/*search bar*/
+
+.search-bar-container {
+	border: solid black 0px;
+	width: 55%;
+	height: 33px;
+	margin: auto;
+	float: left;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.search-bar-container input[type=text] {
+	height: 100%;
+	width: 90%;
+	border-radius: 10px;
+	background-color: #2c3e50;
+	border: solid white 1px;
+	padding: 5px;
+	color: white;
+}
+
+.search-bar-container input[type=text]:focus {
+	outline: none !important;
+}
+.search-bar-container button {
+	border-radius: 10px;
+	border: solid black 1px;
+	width: 10%;
+	height: 99%;
+	/*margin-left: 2px;*/
+	float: right;
+	background-color: #f39c12;
+	font-weight: bold;
+}
+
+.search-bar-container button:focus {
+	outline : none !important;
+}
+
+.our-prod-label{
+	float: left;
+	margin: 5px 5px 5px 0px; 
+	border: solid black 0px;
+	width: 50%;
+	height: auto;
+	/*position: relative;*/
+	z-index: 1;
+	border-top-width: 0px;
+	border-bottom: 2px solid black;
+}
+
+/*.our-prod-label:before {
+	content: "";
+	position: absolute;
+	left    : 0;
+  	bottom  : 0;
+  	height  : 1px;
+  	width   : 120%;  /* or 100px 
+  	border-bottom: 2px solid black;
+}*/
+
+.our-prod-label h1 {
+	margin-left: 15px;
+	float: left;
+} 
+
+.add-prod {
+	margin-left: 10px !important;
+}
+
+/*products body*/
+.prod-body-container {
+	border: solid black 0px;
+	width: 100%;
+	height: auto;
+	min-height: 300px;	
+	margin-top: 55px;
+	/*padding: 10px 70px 10px 70px;*/
+	padding: 20px;
+}
+
+.products-container {
+	border: solid #95a5a6 1px;
+	width: auto;
+	/*height: 350px;*/
+	height: auto;
+	border-radius: 10px;
+	padding: 10px 5px 10px 5px;
+	width: 100%	;
+	/*overflow-x: scroll;*/
+}
+
+.products-alignment {
+	/*border: solid black 1px;*/
+	width: 95% !important;
+	height: 100px;
+	margin: auto;
+	display: table;
+	padding: 5px;
+	/*display: inline;*/
+}
+
+.product-container {
+	border: solid #95a5a6 1px;
+	width: 250px;
+	height: 330px;
+	/*height: auto;*/
+	border-radius: 10px;
+	padding: .5%;
+	display: inline-grid;
+	margin: auto;
+	margin-left: 5%;
+	margin-top: 10px;
+	position: relative;
+}
+
+.prod-img {
+	width: 99%;
+	height: 150px;
+	margin-top: 5px;
+}
+
+.prod-details-container {
+	width: 99%;
+	height: 150px;
+	border: solid #95a5a6 1px;
+	padding: 5px;
+	position: relative;
+	/*border-bottom-left-radius: 10px;*/
+}
+.prod-details-container h5 {
+	text-align: center;
+	margin-top: -25px;
+}
+
+.prod-details-container p {
+	/*margin-top: -1em;*/
+	margin-bottom: 3px;
+}
+
+.prod-details-container p span{
+	font-weight: bold;
+}
+
+.add-to-cart-btn {
+	background-color: #f39c12 !important; 
+	position: absolute !important;
+	bottom: 5px;
+	right: 0px;
+}
+
+label {
+	text-align: left !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
